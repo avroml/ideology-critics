@@ -46,8 +46,8 @@ body {
 
 h1 {
   font-family: 'intro_rust_gbase_2_line';
-  font-size: 5.8rem;
-  letter-spacing: 1.5px;
+  font-size: 6.8rem;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -117,11 +117,10 @@ aside ul {
 }
 aside p {
   text-indent: 40px;
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 menu li {
-  text-decoration: none; /*si kktu meu aista nu merje - tot si tot le subliniaza*/
   display: block;
   padding: 2rem;
   border: 1px solid #a66;
@@ -129,6 +128,31 @@ menu li {
   list-style: none;
   text-align: center;
   font-weight: bold;
+  font-size: 2.4rem;
+}
+
+menu li a:link {
+  text-decoration: none;
+}
+
+menu li a:visited {
+
+}
+
+menu li a:focus {
+  background-color: #a66;
+  color: white;
+}
+
+menu li a:hover {
+  background-color: #a66;
+  color: white;
+}
+
+menu li a:active {
+  background-color: #a66;
+  color: grey;
+  border: 2px solid grey;
 }
 
 a {
