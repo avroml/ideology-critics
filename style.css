@@ -1,0 +1,172 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'intro_head_rbase';
+    src: url('fonts/introheadr-base-webfont.woff2') format('woff2'),
+         url('fonts/introheadr-base-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'intro_rust_gbase_2_line';
+    src: url('fonts/introrustg-base2line-webfont.woff2') format('woff2'),
+         url('fonts/introrustg-base2line-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'intro_script_rh2_base';
+    src: url('fonts/introscriptr-h2base-webfont.woff2') format('woff2'),
+         url('fonts/introscriptr-h2base-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+    font-family: 'intro_head_rbase';
+    font-size: 1.8rem;
+    line-height: 1.5;
+    word-spacing: 0.3rem;
+}
+
+h1 {
+  font-family: 'intro_rust_gbase_2_line';
+  font-size: 5.8rem;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-family: 'intro_script_rh2_base';
+  font-size: 2.4rem;
+}
+
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+header {
+  text-align: center;
+}
+
+
+section h2+p {
+  text-indent: 20px;
+}
+
+aside ul {
+  line-height: 2;
+  margin-bottom: 0;
+}
+aside p {
+  text-indent: 40px;
+  margin-top: 0;
+}
+
+menu li {
+  text-decoration: none; /*si kktu meu aista nu merje - tot si tot le subliniaza*/
+  display: block;
+  padding: 2rem;
+  border: 1px solid #a66;
+  margin-top: 1rem;
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  outline: none;
+}
+
+a:link {
+  color:#a66;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:#a66;
+}
+
+a:focus {
+  color:#a66;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#a66;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: #a66;
+  color: white;
+}
+
+a[href*="http"] {
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 18px 18px;
+  padding-right: 21px;
+}
+
+menu {
+  padding: 0;
+  width: 100%
+}
+
